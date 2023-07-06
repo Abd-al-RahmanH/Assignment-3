@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Layout</title>
+  <style>
+    /* Set the container to have a flexbox layout */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Set each card to have equal width and height */
+    .card {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+
+    /* Center the cards horizontally within the container */
+    .card {
+      justify-content: center;
+    }
+
+    /* Add an image and text content to each card */
+    .card > img {
+      width: 100%;
+    }
+
+    .card > .content {
+      padding: 10px;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      /* On smaller screens, change the flex-direction to column */
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/100x100" alt="Card image">
+      <div class="content">
+        <h2>Card title</h2>
+        <p>This is the text content of the card.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/100x100" alt="Card image">
+      <div class="content">
+        <h2>Card title</h2>
+        <p>This is the text content of the card.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/100x100" alt="Card image">
+      <div class="content">
+        <h2>Card title</h2>
+        <p>This is the text content of the card.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
